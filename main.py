@@ -14,12 +14,11 @@ from langchain_core.prompts import ChatPromptTemplate
 
 DB_FOLDER = "./elkomy_final_db"
 ZIP_FILE = "db.zip"
-# حط رابط ملف الـ zip من درايف هنا
 DRIVE_LINK = "YOUR_GOOGLE_DRIVE_ZIP_LINK" 
 
 if not os.path.exists(DB_FOLDER):
     print("⏳ Downloading database from Google Drive...")
-    gdown.download(url=DRIVE_LINK, output=ZIP_FILE, quiet=False, fuzzy=True)
+   gdown.download(url=DRIVE_LINK, output=ZIP_FILE, quiet=False)
     
     print("📦 Extracting database...")
     with zipfile.ZipFile(ZIP_FILE, 'r') as zip_ref:
