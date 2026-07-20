@@ -1,10 +1,9 @@
 fastapi
 uvicorn
 gdown
-langchain
-langchain-community
+langchain==0.2.16
+langchain-community==0.2.16
 langchain-core
-langchain-classic
 langchain-google-genai
 google-generativeai
 pydantic
