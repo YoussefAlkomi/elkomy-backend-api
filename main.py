@@ -14,7 +14,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 DB_FOLDER = "./elkomy_final_db"
 ZIP_FILE = "db.zip"
-DRIVE_LINK = "YOUR_GOOGLE_DRIVE_ZIP_LINK" 
+DRIVE_LINK = "https://YOUR_GOOGLE_DRIVE_ZIP_LINK" 
 
 if not os.path.exists(DB_FOLDER):
     print("⏳ Downloading database from Google Drive...")
